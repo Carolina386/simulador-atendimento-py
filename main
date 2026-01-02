@@ -1,0 +1,33 @@
+nome = input("Qual seu nome? ")
+print(f"Olá, {nome}! Seja bem-vindo(a) ao atendimento, escolha uma opção.")
+
+print("""
+Menu de opções:
+1 - Financeiro
+2 - Extrato
+3 - Suporte Técnico
+4 - Cancelamento
+5 - Falar com um de nossos atendentes
+""")
+
+opcao = input("Digite a opção desejada: ")
+
+if opcao == "1":
+    print(f"{nome}, você escolheu o setor Financeiro.")
+elif opcao == "2":
+    print(f"{nome}, você escolheu a opção Extrato.")
+elif opcao == "3":
+    print(f"{nome}, você escolheu a opção Suporte Técnico.")
+elif opcao == "4":
+    print(f"{nome}, você escolheu a opção Cancelamento.")
+elif opcao == "5":
+    print(f"{nome}, você escolheu falar com um de nossos atendentes.")
+else:
+    print("Opção inválida.")
+
+resolucao = input("Seu problema foi resolvido? (sim/nao): ").lower()
+
+if resolucao == "sim":
+    print("Atendimento finalizado.")
+else:
+    print(f"{nome}, estamos te direcionando a um de nossos atendentes.")
